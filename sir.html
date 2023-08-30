@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header{
+        display: flex;
+        background-color: black;
+        color: aliceblue;
+        justify-content: space-around;
+        line-height: 34px;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .list{
+        padding: 0 34px;
+        background-color: rgba(240, 7, 77, 0.473);
+        position: relative;
+    }
+
+    .content{
+        position: absolute;
+        background-color: aqua;
+        color: black;
+        min-width: 100px;
+        list-style: none;
+        left: 0;
+        display: none;
+       
+    }
+
+    .list:hover .content{
+        display: block;
+    }
+    li{
+        /* padding: 8px 12px; */
+        border-bottom: 1px solid black;
+        
+    }
+    .content2{
+        position: absolute;
+        background-color: aqua;
+        color: black;
+        min-width: 100px;
+        list-style: none;
+        left: 0;
+        display: none;
+       
+    }
+
+    .list:hover .content2{
+        display: block;
+    }
+    li{
+        /* padding: 8px 12px; */
+        border-bottom: 1px solid black;
+        
+    }
+
+
+</style>
+<body>
+    <div class="header">
+
+
+        <div class="list">
+            list1
+
+            <ul class="content">
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+            </ul>
+
+        </div>
+
+
+        <div class="list">
+            list2
+            <ul class="content2">
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+            </ul>
+
+        </div>
+        <div class="list">list3</div>
+        <div class="list">list4</div>
+        <div class="list">list5</div>
+        <div class="list">list7</div>
+
+
+    </div>
+    
+    
+</body>
+</html>
